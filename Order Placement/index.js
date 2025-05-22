@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const orderRouter = require('./routes/order');
-app.use('/', orderRouter);
+app.use('/order', orderRouter);
 
 const PORT = process.env.PORT || 8072;
 
